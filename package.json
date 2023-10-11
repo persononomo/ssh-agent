@@ -1,16 +1,17 @@
 {
-    "name": "webfactory-action-ssh-agent",
-    "repository": "git@github.com:webfactory/ssh-agent.git",
-    "description": "GitHub Action to set up ssh-agent with a private SSH key",
-    "version": "0.7.0",
-    "main": "index.js",
-    "author": "webfactory GmbH <info@webfactory.de>",
-    "license": "MIT",
-    "devDependencies": {
-        "@actions/core": "^1.9.1",
-        "@zeit/ncc": "^0.20.5"
-    },
-    "scripts": {
-        "build": "node scripts/build.js"
-    }
+  "name": "persononomo-action-ssh-agent",
+  "repository": "git@github.com:persononomo/ssh-agent.git",
+  "description": "GitHub Action to set up ssh-agent with a private SSH key",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Pavlo Kozub <pavlo.kozub@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@actions/core": "^1.9.1",
+    "@zeit/ncc": "^0.20.5"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "node scripts/build.js"
+  }
 }
