@@ -19,6 +19,9 @@ inputs:
     git-cmd:
         description: 'git command'
         required: false
+    owner-and-repo:
+        description: 'Owner and repository name in the form of `owner/repo`'
+        required: true
 runs:
     using: 'node16'
     main: 'dist/index.js'
